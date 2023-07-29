@@ -52,9 +52,7 @@ if (playGame) {
     while (playGame) {
         const playerChoice = prompt("Paper, Rock, or Scissors?");
         if (playerChoice || playerChoice === "") {
-            console.log(playerChoice);
             const playerOne = capitalizeChoice(playerChoice);
-            console.log(playerOne);
             if (['Rock', 'Paper', 'Scissors'].indexOf(playerOne) !== -1) {
                 const computerChoice = Math.floor(Math.random() * 3 + 1);
                 const computer = computerChoice === 1 ? 'Rock'
